@@ -1,7 +1,7 @@
-# ArthSaathi: Project Requirements
+# FinClarity: Project Requirements
 
 ## 1. Executive Summary
-ArthSaathi is an AI-powered financial clarity assistant designed to democratize financial literacy for the average Indian citizen. By leveraging advanced Large Language Models (LLMs) and Optical Character Recognition (OCR), it translates complex financial documents, policies, and processes into simple, vernacular language. The platform empowers users to make informed decisions without selling products or managing assets, acting purely as an unbiased informational guide.
+FinClarity is an AI-powered financial clarity assistant designed to democratize financial literacy for the average Indian citizen. By leveraging advanced Large Language Models (LLMs) and Optical Character Recognition (OCR), it translates complex financial documents, policies, and processes into simple, vernacular language. The platform empowers users to make informed decisions without selling products or managing assets, acting purely as an unbiased informational guide.
 
 ## 2. Problem Statement
 The modern financial ecosystem is opaque and intimidating for the average person. Complex jargon, lengthy policy documents, and convoluted application processes create a barrier to financial inclusion.

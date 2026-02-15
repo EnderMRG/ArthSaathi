@@ -1,7 +1,7 @@
-# ArthSaathi: Technical Design Document
+# FinClarity: Technical Design Document
 
 ## 1. System Overview
-ArthSaathi is a serverless, event-driven application built on AWS. It uses a React-based frontend for user interaction and an AWS Lambda backend to orchestrate calls between Amazon Bedrock (for AI reasoning) and Amazon Textract (for document processing). The system is designed to be stateless, scalable, and cost-effective.
+FinClarity is a serverless, event-driven application built on AWS. It uses a React-based frontend for user interaction and an AWS Lambda backend to orchestrate calls between Amazon Bedrock (for AI reasoning) and Amazon Textract (for document processing). The system is designed to be stateless, scalable, and cost-effective.
 
 ## 2. High-Level Architecture
 The architecture follows the standard AWS Serverless pattern:
@@ -48,10 +48,10 @@ The architecture follows the standard AWS Serverless pattern:
 
 ### 3.5 Data Storage
 - **Amazon S3**: 
-  - Bucket: `arthsaathi-verified-uploads`.
+  - Bucket: `finclarity-verified-uploads`.
   - Lifecycle Policy: Delete objects after 1 hour (Privacy).
 - **Amazon DynamoDB**:
-  - Table: `ArthSaathiSessions`.
+  - Table: `FinClaritySessions`.
   - PK: `SessionID`, SK: `Timestamp`.
   - Attributes: `UserQuery`, `AIResponse`, `ContextVector` (optional).
 
@@ -84,7 +84,7 @@ The architecture follows the standard AWS Serverless pattern:
 
 ### 5.3 Structured Prompting (Example)
 ```text
-System: You are ArthSaathi, a helpful financial guide.
+System: You are FinClarity, a helpful financial guide.
 Context: User wants to open a PPF account.
 Task: Provide a step-by-step guide.
 Tone: Simple, encouraging, 8th-grade reading level.
@@ -128,7 +128,7 @@ Output Format: Markdown list with 'Key Documents' section.
 
 ## 12. Folder Structure
 ```
-arthsaathi-backend/
+finclarity-backend/
 ├── src/
 │   ├── handlers/       # Lambda function handlers
 │   │   ├── chat.js
